@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C. J. Hull – Original Watercolour Paintings of Snowdonia &amp; the Lake District</title>
+<meta name="description" content="Original, one-of-a-kind watercolour paintings by North Wales artist Chris Hull. Browse past work from Snowdonia, the Lake District and Scotland, and commission a scene you love.">
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to paintings</a>
+
+<header class="site-header">
+  <svg class="wash" viewBox="0 0 900 260" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <defs><filter id="wash-blur" x="-20%" y="-40%" width="140%" height="180%"><feTurbulence type="fractalNoise" baseFrequency=".012" numOctaves="3" seed="4"/><feDisplacementMap in="SourceGraphic" scale="60"/><feGaussianBlur stdDeviation="14"/></filter></defs>
+    <g filter="url(#wash-blur)" opacity=".5"><ellipse cx="330" cy="130" rx="260" ry="70" fill="#9fb4c7"/><ellipse cx="560" cy="120" rx="220" ry="60" fill="#c9b79a"/><ellipse cx="450" cy="150" rx="160" ry="40" fill="#b8a7b8"/></g>
+  </svg>
+  <a class="mark" href="./">C. J. Hull</a>
+  <p class="tagline">Watercolour paintings from Snowdonia</p>
+  <nav class="site-nav" aria-label="Main">
+    <ul>
+      <li><a href="./" aria-current="page">Gallery</a></li>
+      <li><a href="commissions.html">Commissions</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <h1 class="visually-hidden">Gallery of original watercolour paintings</h1>
+  <p class="intro">Every painting is an <strong>original, one-of-a-kind</strong> watercolour. These are examples of past work — <strong>commission a scene you love</strong>, or ask about something similar.</p>
+
+  <ul class="filters" aria-label="Filter paintings by region">
+    <li><button type="button" data-filter="all" aria-pressed="true">All</button></li>
+    <li><button type="button" data-filter="north-wales" aria-pressed="false">North Wales</button></li>
+    <li><button type="button" data-filter="lake-district" aria-pressed="false">Lake District</button></li>
+    <li><button type="button" data-filter="scotland" aria-pressed="false">Scotland</button></li>
+  </ul>
+
+  <ul class="gallery" id="gallery" aria-live="polite"></ul>
+  <noscript><p class="gallery-empty">The gallery needs JavaScript to load. Please enable it, or <a href="contact.html">get in touch</a>.</p></noscript>
+</main>
+
+<dialog class="lightbox" id="lightbox" aria-labelledby="lb-title">
+  <p class="lb-count" id="lb-count"></p>
+  <div class="lb-stage" id="lb-stage">
+    <div class="frame"><img class="lb-img" id="lb-img" alt=""></div>
+  </div>
+  <div class="lb-info">
+    <h2 class="lb-title" id="lb-title"></h2>
+    <p class="lb-meta" id="lb-meta"></p>
+    <a class="btn" id="lb-enquire" href="contact.html">Enquire about a painting like this</a>
+  </div>
+  <button type="button" class="lb-btn lb-close" id="lb-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <button type="button" class="lb-btn lb-prev" id="lb-prev" aria-label="Previous painting">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+  </button>
+  <button type="button" class="lb-btn lb-next" id="lb-next" aria-label="Next painting">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+  </button>
+</dialog>
+
+<footer class="site-footer">
+  <p>Original watercolours by Chris Hull · North Wales · Originals from £300</p>
+  <p><a href="commissions.html">Commission a painting</a></p>
+  <p>© <span id="year">2026</span> C. J. Hull</p>
+</footer>
+
+<script src="assets/js/gallery.js" defer></script>
+</body>
+</html>
