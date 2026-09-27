@@ -24,7 +24,7 @@ build order. Read it before starting work.
 ## Contact form (FormSubmit)
 
 - `contact.html` posts to FormSubmit using the **hashed form ID**
-  (`FORMSUBMIT_ID` in the form's `action` and `data-form-id`). `contact.js`
+  (in the form's `action` and `data-form-id` in `contact.html`). `contact.js`
   sends it via the AJAX endpoint; without JS it posts normally and FormSubmit
   redirects to `contact.html?sent=1`.
 - **Never commit the real receiving email address** (not in code, docs or
