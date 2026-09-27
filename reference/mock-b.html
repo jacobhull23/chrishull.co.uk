@@ -1,0 +1,36 @@
+<!doctype html><meta charset=utf-8><style>
+@font-face{font-family:Cormorant;src:url(cormorant-garamond-latin-400-normal.woff2)}
+@font-face{font-family:Cormorant;font-weight:500;src:url(cormorant-garamond-latin-500-normal.woff2)}
+@font-face{font-family:Cormorant;font-weight:600;src:url(cormorant-garamond-latin-600-normal.woff2)}
+@font-face{font-family:Cormorant;font-style:italic;src:url(cormorant-garamond-latin-400-italic.woff2)}
+@font-face{font-family:Inter;src:url(inter-latin-400-normal.woff2)}
+@font-face{font-family:Inter;font-weight:500;src:url(inter-latin-500-normal.woff2)}
+*{box-sizing:border-box;margin:0}
+body{font-family:Inter,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+
+body{background:#f5f0e6;color:#33302b;position:relative}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.35;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/><feColorMatrix values='0 0 0 0 .45 0 0 0 0 .40 0 0 0 0 .33 0 0 0 .5 0'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>")}
+header{position:relative;text-align:center;padding:70px 0 20px}
+.wash{position:absolute;left:50%;top:14px;transform:translateX(-50%);width:900px;height:250px;z-index:0}
+header>*{position:relative}
+.mark{font-family:Cormorant;font-weight:600;font-size:58px;letter-spacing:.06em;color:#2f3a45}
+.sub{font-family:Cormorant;font-style:italic;font-size:21px;color:#5e5a52;margin-top:0}
+nav{display:flex;gap:34px;justify-content:center;margin-top:34px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#6f6a60}
+nav a.on{color:#2f3a45}
+.intro{text-align:center;font-size:15px;line-height:1.7;color:#5e5a52;max-width:600px;margin:30px auto 30px}
+.intro b{font-weight:500;color:#2f3a45}
+.filters{display:flex;gap:10px;justify-content:center;margin-bottom:40px;font-size:12px;letter-spacing:.06em}
+.filters a{padding:7px 16px;border-radius:40px;border:1px solid #d8cfbf;color:#6f6a60}
+.filters a.on{background:#2f3a45;border-color:#2f3a45;color:#f5f0e6}
+main{max-width:1320px;margin:0 auto}
+.row{display:flex;gap:30px;margin-bottom:40px}
+.ph{background:#fff;padding:12px;box-shadow:0 1px 2px rgba(60,50,30,.10),0 8px 24px rgba(60,50,30,.08)}
+figcaption{text-align:center;font-family:Cormorant;font-size:18px;margin-top:14px;color:#3a3833}
+figcaption span{display:none}
+</style>
+<header><svg class="wash" viewBox="0 0 900 260" preserveAspectRatio="none"><defs><filter id="b"><feTurbulence type="fractalNoise" baseFrequency=".012" numOctaves="3" seed="4"/><feDisplacementMap in="SourceGraphic" scale="60"/><feGaussianBlur stdDeviation="14"/></filter></defs>
+<g filter="url(#b)" opacity=".55"><ellipse cx="330" cy="130" rx="260" ry="70" fill="#9fb4c7"/><ellipse cx="560" cy="120" rx="220" ry="60" fill="#c9b79a"/><ellipse cx="450" cy="150" rx="160" ry="40" fill="#b8a7b8"/></g></svg><div class="mark">C. J. Hull</div><div class="sub">Watercolour paintings from Snowdonia</div><nav><a class="on">Gallery</a><a>Commissions</a><a>About</a><a>Contact</a></nav></header>
+<p class="intro">Every painting is an <b>original, one-of-a-kind</b> watercolour. These are examples of past work — <b>commission a scene you love</b>, or ask about something similar.</p>
+<div class="filters"><a class="on">All</a><a>North Wales</a><a>Lake District</a><a>Scotland</a></div><main><div class="row"><figure style="flex:1.528"><div class="ph" style="aspect-ratio:909/595"><img src="img/llyn-ogwen-y-garn.jpg"></div><figcaption>Llyn Ogwen &amp; Y Garn<span>North Wales</span></figcaption></figure><figure style="flex:1.523"><div class="ph" style="aspect-ratio:879/577"><img src="img/derwent-trees-in-autumn.jpg"></div><figcaption>Derwent Trees In Autumn<span>Lake District</span></figcaption></figure><figure style="flex:1.414"><div class="ph" style="aspect-ratio:1191/842"><img src="img/the-glyders.jpg"></div><figcaption>The Glyders<span>North Wales</span></figcaption></figure><figure style="flex:1.493"><div class="ph" style="aspect-ratio:900/603"><img src="img/eilean-donan-castle.jpg"></div><figcaption>Eilean Donan Castle<span>Scotland</span></figcaption></figure></div><div class="row"><figure style="flex:1.532"><div class="ph" style="aspect-ratio:1273/831"><img src="img/misty-derwent-water.jpg"></div><figcaption>Misty Derwent Water<span>Lake District</span></figcaption></figure><figure style="flex:1.473"><div class="ph" style="aspect-ratio:900/611"><img src="img/above-langdale.jpg"></div><figcaption>Above Langdale<span>Lake District</span></figcaption></figure><figure style="flex:1.414"><div class="ph" style="aspect-ratio:1191/842"><img src="img/bridge-at-beddgelert.jpg"></div><figcaption>Bridge at Beddgelert<span>North Wales</span></figcaption></figure><figure style="flex:1.510"><div class="ph" style="aspect-ratio:959/635"><img src="img/south-stack-lighthouse.jpg"></div><figcaption>South Stack Lighthouse<span>North Wales</span></figcaption></figure></div><div class="row"><figure style="flex:1.414"><div class="ph" style="aspect-ratio:1191/842"><img src="img/snowdon-horseshoe.jpg"></div><figcaption>Snowdon Horseshoe<span>North Wales</span></figcaption></figure><figure style="flex:1.434"><div class="ph" style="aspect-ratio:882/615"><img src="img/catbells-in-winter.jpg"></div><figcaption>Catbells In Winter<span>Lake District</span></figcaption></figure><figure style="flex:1.414"><div class="ph" style="aspect-ratio:1191/842"><img src="img/tryfan-and-farmhouse.jpg"></div><figcaption>Tryfan and Farmhouse<span>North Wales</span></figcaption></figure><figure style="flex:1.582"><div class="ph" style="aspect-ratio:957/605"><img src="img/misty-rydal-reflections.jpg"></div><figcaption>Misty Rydal Reflections<span>Lake District</span></figcaption></figure></div><div class="row"><figure style="flex:1.414"><div class="ph" style="aspect-ratio:959/678"><img src="img/conwy-castle-reflections.jpg"></div><figcaption>Conwy Castle Reflections<span>North Wales</span></figcaption></figure><figure style="flex:1.478"><div class="ph" style="aspect-ratio:900/609"><img src="img/waterfall-at-glen-coe.jpg"></div><figcaption>Waterfall At Glen Coe<span>Scotland</span></figcaption></figure><figure style="flex:1.592"><div class="ph" style="aspect-ratio:842/529"><img src="img/langdale-pikes-from-blea-tarn.jpg"></div><figcaption>Langdale Pikes from Blea Tarn<span>Lake District</span></figcaption></figure><figure style="flex:1.414"><div class="ph" style="aspect-ratio:1191/842"><img src="img/aber-falls-and-pines.jpg"></div><figcaption>Aber Falls and Pines<span>North Wales</span></figcaption></figure></div><div class="row"><figure style="flex:1.415"><div class="ph" style="aspect-ratio:842/595"><img src="img/thirlmere-in-the-mist.jpg"></div><figcaption>Thirlmere In The Mist<span>Lake District</span></figcaption></figure><figure style="flex:1.414"><div class="ph" style="aspect-ratio:1191/842"><img src="img/light-over-llyn-padarn.jpg"></div><figcaption>Light over Llyn Padarn<span>North Wales</span></figcaption></figure></div></main>
