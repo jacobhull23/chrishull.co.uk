@@ -4,391 +4,447 @@
   "region": "North Wales",
   "file": "llyn-ogwen-y-garn.jpg",
   "w": 909,
-  "h": 595
+  "h": 595,
+  "alt": "Sunbeams break through storm clouds onto Y Garn, above the still water of Llyn Ogwen and a small stone farmhouse"
  },
  {
   "title": "Derwent Trees In Autumn",
   "region": "Lake District",
   "file": "derwent-trees-in-autumn.jpg",
   "w": 879,
-  "h": 577
+  "h": 577,
+  "alt": "A hillside of golden autumn trees and tall pines reflected in calm water at Derwent Water"
  },
  {
   "title": "The Glyders",
   "region": "North Wales",
   "file": "the-glyders.jpg",
   "w": 1191,
-  "h": 842
+  "h": 842,
+  "alt": "Light pours down a wide mountain valley below the Glyders, with sheep beside a winding track and a slate-roofed cottage"
  },
  {
   "title": "Eilean Donan Castle",
   "region": "Scotland",
   "file": "eilean-donan-castle.jpg",
   "w": 900,
-  "h": 603
+  "h": 603,
+  "alt": "Eilean Donan Castle on its island, with the stone bridge and mountains reflected in the loch"
  },
  {
   "title": "Misty Derwent Water",
   "region": "Lake District",
   "file": "misty-derwent-water.jpg",
   "w": 1273,
-  "h": 831
+  "h": 831,
+  "alt": "Morning mist over Derwent Water, with tall pines on a shoreline and pink-brown fells beyond"
  },
  {
   "title": "Above Langdale",
   "region": "Lake District",
   "file": "above-langdale.jpg",
   "w": 900,
-  "h": 611
+  "h": 611,
+  "alt": "A path climbing a rocky knoll above Langdale, with a dramatic ring of misty peaks behind"
  },
  {
   "title": "Bridge at Beddgelert",
   "region": "North Wales",
   "file": "bridge-at-beddgelert.jpg",
   "w": 1191,
-  "h": 842
+  "h": 842,
+  "alt": "The old stone bridge at Beddgelert over a shallow river, with stone buildings and wooded hills"
  },
  {
   "title": "South Stack Lighthouse",
   "region": "North Wales",
   "file": "south-stack-lighthouse.jpg",
   "w": 959,
-  "h": 635
+  "h": 635,
+  "alt": "South Stack lighthouse on its rocky island above a sea of white surf, under a stormy sky"
  },
  {
   "title": "Snowdon Horseshoe",
   "region": "North Wales",
   "file": "snowdon-horseshoe.jpg",
   "w": 1191,
-  "h": 842
+  "h": 842,
+  "alt": "Shafts of sunlight from dark clouds over the Snowdon Horseshoe, above a silvery lake"
  },
  {
   "title": "Catbells In Winter",
   "region": "Lake District",
   "file": "catbells-in-winter.jpg",
   "w": 882,
-  "h": 615
+  "h": 615,
+  "alt": "Snow-capped Catbells and neighbouring fells above a wooded shore, reflected in the lake"
  },
  {
   "title": "Tryfan and Farmhouse",
   "region": "North Wales",
   "file": "tryfan-and-farmhouse.jpg",
   "w": 1191,
-  "h": 842
+  "h": 842,
+  "alt": "The jagged peak of Tryfan above a whitewashed farmhouse, a stream and green fields"
  },
  {
   "title": "Misty Rydal Reflections",
   "region": "Lake District",
   "file": "misty-rydal-reflections.jpg",
   "w": 957,
-  "h": 605
+  "h": 605,
+  "alt": "Mist on Rydal Water, with an autumn tree on the bank and pine-covered islands"
  },
  {
   "title": "Conwy Castle Reflections",
   "region": "North Wales",
   "file": "conwy-castle-reflections.jpg",
   "w": 959,
-  "h": 678
+  "h": 678,
+  "alt": "Conwy Castle's towers and the suspension bridge reflected in the estuary, with hills behind"
  },
  {
   "title": "Waterfall At Glen Coe",
   "region": "Scotland",
   "file": "waterfall-at-glen-coe.jpg",
   "w": 900,
-  "h": 609
+  "h": 609,
+  "alt": "A waterfall tumbling over dark rocks in Glen Coe, between steep mountainsides under a stormy sky"
  },
  {
   "title": "Langdale Pikes from Blea Tarn",
   "region": "Lake District",
   "file": "langdale-pikes-from-blea-tarn.jpg",
   "w": 842,
-  "h": 529
+  "h": 529,
+  "alt": "The sunlit Langdale Pikes rising above Blea Tarn, with pines on the shore"
  },
  {
   "title": "Aber Falls and Pines",
   "region": "North Wales",
   "file": "aber-falls-and-pines.jpg",
   "w": 1191,
-  "h": 842
+  "h": 842,
+  "alt": "Aber Falls pouring down a mountainside, with white ponies grazing in the autumn valley below"
  },
  {
   "title": "Thirlmere In The Mist",
   "region": "Lake District",
   "file": "thirlmere-in-the-mist.jpg",
   "w": 842,
-  "h": 595
+  "h": 595,
+  "alt": "Tall pines emerging from thick mist on the shore of Thirlmere, reflected in still water"
  },
  {
   "title": "Light over Llyn Padarn",
   "region": "North Wales",
   "file": "light-over-llyn-padarn.jpg",
   "w": 1191,
-  "h": 842
+  "h": 842,
+  "alt": "Sunbeams over a dark pointed mountain beside Llyn Padarn, with reeds in the foreground"
  },
  {
   "title": "Autumn At Aberglaslyn",
   "region": "North Wales",
   "file": "autumn-at-aberglaslyn.jpg",
   "w": 959,
-  "h": 648
+  "h": 648,
+  "alt": "A rocky river rushing through the Aberglaslyn gorge, framed by autumn trees and pines"
  },
  {
   "title": "Skiddaw Above the Clouds",
   "region": "Lake District",
   "file": "skiddaw-above-the-clouds.jpg",
   "w": 842,
-  "h": 553
+  "h": 553,
+  "alt": "Skiddaw's summit rising above a band of cloud, over a calm lake with a small sailing boat"
  },
  {
   "title": "Castell y Gwynt at Sunset",
   "region": "North Wales",
   "file": "castell-y-gwynt-at-sunset.jpg",
   "w": 1191,
-  "h": 631
+  "h": 631,
+  "alt": "The jagged rocks of Castell y Gwynt in deep snow, lit pink and gold at sunset, with two small walkers"
  },
  {
   "title": "Autumn Reflections",
   "region": "Lake District",
   "file": "autumn-reflections.jpg",
   "w": 880,
-  "h": 513
+  "h": 513,
+  "alt": "Autumn trees and small islands reflected in a calm lake, with soft blue mountains beyond"
  },
  {
   "title": "Cottage in the Ogwen Valley",
   "region": "North Wales",
   "file": "cottage-in-the-ogwen-valley.jpg",
   "w": 969,
-  "h": 678
+  "h": 678,
+  "alt": "A whitewashed stone cottage with a slate roof and a bare tree, in the Ogwen Valley"
  },
  {
   "title": "Derwent Water & Boats",
   "region": "Lake District",
   "file": "derwent-water-boats.jpg",
   "w": 900,
-  "h": 611
+  "h": 611,
+  "alt": "Boats moored below a wooded headland in autumn colours on Derwent Water, under a moody sky"
  },
  {
   "title": "Cwm Idwal and the Devil's Kitchen",
   "region": "North Wales",
   "file": "cwm-idwal-and-the-devil-s-kitchen.jpg",
   "w": 959,
-  "h": 623
+  "h": 623,
+  "alt": "The dark cliffs of Cwm Idwal and the Devil's Kitchen above the lake, with boulders on the shore"
  },
  {
   "title": "Fleetwith Pike at Buttermere",
   "region": "Lake District",
   "file": "fleetwith-pike-at-buttermere.jpg",
   "w": 842,
-  "h": 555
+  "h": 555,
+  "alt": "Fleetwith Pike at the head of Buttermere, with a wooden jetty in the foreground"
  },
  {
   "title": "Cwm Idwal and the Devil's Kitchen (II)",
   "region": "North Wales",
   "file": "cwm-idwal-and-the-devil-s-kitchen-ii.jpg",
   "w": 1191,
-  "h": 842
+  "h": 842,
+  "alt": "Sunlight breaking through cloud over the Devil's Kitchen cleft, above rocks at the edge of Llyn Idwal"
  },
  {
   "title": "Grasmere From Loughrigg Terrace",
   "region": "Lake District",
   "file": "grasmere-from-loughrigg-terrace.jpg",
   "w": 842,
-  "h": 595
+  "h": 595,
+  "alt": "A view down over Grasmere and its island from Loughrigg Terrace, with fells and woodland around"
  },
  {
   "title": "Llanberis Pass",
   "region": "North Wales",
   "file": "llanberis-pass.jpg",
   "w": 1356,
-  "h": 959
+  "h": 959,
+  "alt": "Looking down the steep, rocky Llanberis Pass, with green slopes and boulders"
  },
  {
   "title": "Grasmere Reflections",
   "region": "Lake District",
   "file": "grasmere-reflections.jpg",
   "w": 842,
-  "h": 521
+  "h": 521,
+  "alt": "A pink-lit fell above a wooded shore, reflected in a calm Grasmere"
  },
  {
   "title": "Llyn Crafnant Reflections",
   "region": "North Wales",
   "file": "llyn-crafnant-reflections.jpg",
   "w": 959,
-  "h": 648
+  "h": 648,
+  "alt": "Rugged mountains in warm light above Llyn Crafnant, with rocks at the water's edge"
  },
  {
   "title": "Helm Crag Above Grasmere",
   "region": "Lake District",
   "file": "helm-crag-above-grasmere.jpg",
   "w": 842,
-  "h": 561
+  "h": 561,
+  "alt": "Helm Crag and the fells above Grasmere in golden light, with the lake and its island below"
  },
  {
   "title": "Llyn Crafnant",
   "region": "North Wales",
   "file": "llyn-crafnant.jpg",
   "w": 1191,
-  "h": 842
+  "h": 842,
+  "alt": "Warm-toned mountains around Llyn Crafnant, with pine woods and rocks at the water's edge"
  },
  {
   "title": "Helm Crag Across Grasmere (II)",
   "region": "Lake District",
   "file": "helm-crag-across-grasmere-ii.jpg",
   "w": 1191,
-  "h": 484
+  "h": 484,
+  "alt": "A long panorama of Helm Crag across Grasmere in soft evening light, with a tree on the shore"
  },
  {
   "title": "Moel Fam",
   "region": "North Wales",
   "file": "moel-fam.jpg",
   "w": 1191,
-  "h": 648
+  "h": 648,
+  "alt": "Rolling green farmland and patchwork fields below Moel Fam, framed by tall conifers"
  },
  {
   "title": "Helm Crag across Grasmere",
   "region": "Lake District",
   "file": "helm-crag-across-grasmere.jpg",
   "w": 814,
-  "h": 345
+  "h": 345,
+  "alt": "A panorama of Helm Crag and the fells beyond Grasmere, with geese on the water"
  },
  {
   "title": "Moel Siabod and Snowdon",
   "region": "North Wales",
   "file": "moel-siabod-and-snowdon.jpg",
   "w": 1191,
-  "h": 842
+  "h": 842,
+  "alt": "The pointed peak of Moel Siabod above misty woods, with Snowdon in the distance"
  },
  {
   "title": "Langdale Pikes From Low Wood In Autumn",
   "region": "Lake District",
   "file": "langdale-pikes-from-low-wood-in-autumn.jpg",
   "w": 842,
-  "h": 595
+  "h": 595,
+  "alt": "The Langdale Pikes behind autumn woods, reflected in the water at Low Wood"
  },
  {
   "title": "Nant Ffrancon Farm House",
   "region": "North Wales",
   "file": "nant-ffrancon-farm-house.jpg",
   "w": 964,
-  "h": 664
+  "h": 664,
+  "alt": "A white farmhouse beside a stone wall and winding lane in the Nant Ffrancon valley, below misty cliffs"
  },
  {
   "title": "Langdale Valley",
   "region": "Lake District",
   "file": "langdale-valley.jpg",
   "w": 810,
-  "h": 502
+  "h": 502,
+  "alt": "Stone walls and a large tree in the Langdale Valley, with misty peaks at the head of the valley"
  },
  {
   "title": "Ogwen Bank Falls",
   "region": "North Wales",
   "file": "ogwen-bank-falls.jpg",
   "w": 959,
-  "h": 623
+  "h": 623,
+  "alt": "White water rushing under a stone bridge at Ogwen Bank, among bare winter trees"
  },
  {
   "title": "Loughrigg Tarn and the Langdale Pikes",
   "region": "Lake District",
   "file": "loughrigg-tarn-and-the-langdale-pikes.jpg",
   "w": 842,
-  "h": 560
+  "h": 560,
+  "alt": "Loughrigg Tarn with autumn trees and green fields, and the Langdale Pikes beyond"
  },
  {
   "title": "Ogwen Barn",
   "region": "North Wales",
   "file": "ogwen-barn.jpg",
   "w": 1191,
-  "h": 842
+  "h": 842,
+  "alt": "Y Garn lit by sunlight above Llyn Ogwen, with a small stone barn by the water"
  },
  {
   "title": "Misty Grasmere",
   "region": "Lake District",
   "file": "misty-grasmere.jpg",
   "w": 900,
-  "h": 611
+  "h": 611,
+  "alt": "Misty Grasmere at dawn, with dark trees and islands reflected in still water"
  },
  {
   "title": "Ogwen Falls",
   "region": "North Wales",
   "file": "ogwen-falls.jpg",
   "w": 842,
-  "h": 1191
+  "h": 1191,
+  "alt": "A tall waterfall plunging through a narrow rocky gorge at Ogwen, with pines above (portrait format)"
  },
  {
   "title": "Rydal Water (II)",
   "region": "Lake District",
   "file": "rydal-water-ii.jpg",
   "w": 842,
-  "h": 450
+  "h": 450,
+  "alt": "Trees in fresh green leaf on the shore of Rydal Water, with soft hills beyond"
  },
  {
   "title": "Snowdon and Rock in Winter",
   "region": "North Wales",
   "file": "snowdon-and-rock-in-winter.jpg",
   "w": 1191,
-  "h": 842
+  "h": 842,
+  "alt": "Snowdon's snow-capped peaks above a large rock and a calm lake in winter"
  },
  {
   "title": "Rydal Water in Autumn",
   "region": "Lake District",
   "file": "rydal-water-in-autumn.jpg",
   "w": 842,
-  "h": 541
+  "h": 541,
+  "alt": "Autumn trees half hidden in mist beside Rydal Water, with reeds in the foreground"
  },
  {
   "title": "Stormy Sky Over The Great Orme",
   "region": "North Wales",
   "file": "stormy-sky-over-the-great-orme.jpg",
   "w": 959,
-  "h": 678
+  "h": 678,
+  "alt": "Surf crashing below the limestone cliffs of the Great Orme, under dark clouds and a burst of light"
  },
  {
   "title": "Rydal Water (III)",
   "region": "Lake District",
   "file": "rydal-water-iii.jpg",
   "w": 1134,
-  "h": 482
+  "h": 482,
+  "alt": "A panorama of tall trees on the shore of Rydal Water, with sunlit hills and a blue sky"
  },
  {
   "title": "Tryfan and Pines",
   "region": "North Wales",
   "file": "tryfan-and-pines.jpg",
   "w": 1191,
-  "h": 842
+  "h": 842,
+  "alt": "The sheer slabs and jagged ridge of Tryfan, with a winding stream and a stand of pines"
  },
  {
   "title": "Rydal Water",
   "region": "Lake District",
   "file": "rydal-water.jpg",
   "w": 842,
-  "h": 595
+  "h": 595,
+  "alt": "A clump of trees on a small point in Rydal Water, with pale hills beyond"
  },
  {
   "title": "Walking along the ridge, Crib Goch",
   "region": "North Wales",
   "file": "walking-along-the-ridge-crib-goch.jpg",
   "w": 1191,
-  "h": 842
+  "h": 842,
+  "alt": "Walkers on the knife-edge rocky ridge of Crib Goch, surrounded by swirling cloud"
  },
  {
   "title": "The Langdale Pikes from Loughrigg Tarn",
   "region": "Lake District",
   "file": "the-langdale-pikes-from-loughrigg-tarn.jpg",
   "w": 816,
-  "h": 346
+  "h": 346,
+  "alt": "A panorama of Loughrigg Tarn and green meadows, with the Langdale Pikes on the horizon"
  },
  {
   "title": "Y Garn and Shepherd's Hut",
   "region": "North Wales",
   "file": "y-garn-and-shepherd-s-hut.jpg",
   "w": 1191,
-  "h": 842
+  "h": 842,
+  "alt": "A stone shepherd's hut on a grassy slope below the snow-streaked slopes of Y Garn"
  },
  {
   "title": "Thirlmere",
   "region": "Lake District",
   "file": "thirlmere.jpg",
   "w": 1134,
-  "h": 482
+  "h": 482,
+  "alt": "A long panorama of Thirlmere between steep wooded fellsides in soft golden light"
  }
 ]
