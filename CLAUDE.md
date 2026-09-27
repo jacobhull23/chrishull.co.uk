@@ -39,6 +39,7 @@ build order. Read it before starting work.
   artist directly. Third person only in meta descriptions and alt text.
 - Commissions usually take a week or two; new, never-painted scenes can take
   longer; a painting like one already in the gallery is quicker.
+- Paintings are sold **unframed**; no framing service is offered.
 - Don't name the dog in the photos anywhere on the site.
 
 ## Open to-dos
