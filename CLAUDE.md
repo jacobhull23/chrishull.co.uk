@@ -27,7 +27,8 @@ build order. Read it before starting work.
 - `404.html` sets a `<base>` so its relative links work from any missing URL.
 - Favicon: Jacob's ink-splat artwork (`reference/ink-splat-favicon.png`, not
   published). `scripts/make-favicons.py` crops it and writes `favicon.ico`,
-  `assets/icons/favicon-192.png` and `apple-touch-icon.png`. Don't redraw it.
+  `assets/icons/favicon.svg` (light version in dark mode) and
+  `apple-touch-icon.png`. Don't redraw it.
 - `privacy.html` describes exactly what data the site handles. Update it
   (and its "Last updated" date) if that changes, e.g. analytics or a new
   form provider.
