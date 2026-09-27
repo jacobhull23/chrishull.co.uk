@@ -32,6 +32,21 @@ build order. Read it before starting work.
 - Spam protection: `_honey` honeypot field. `?painting=` prefills the
   painting field and the email subject.
 
+## Voice
+
+- The site is Chris's own: write in the **first person as Chris** ("I paint…",
+  "I'll reply…"), warm and personal, so visitors feel they're dealing with the
+  artist directly. Third person only in meta descriptions and alt text.
+- Commissions usually take a week or two; new, never-painted scenes can take
+  longer; a painting like one already in the gallery is quicker.
+- Don't name the dog in the photos anywhere on the site.
+
+## Open to-dos
+
+- [ ] **Privacy page** (step 4), like jacobhull.me's: what the contact form
+      collects, FormSubmit, GitHub Pages logs. Link it from the footer and
+      the form note.
+
 ## Design
 
 - "Watercolour Paper": warm paper `#f5f0e6`, subtle grain, wash behind the
