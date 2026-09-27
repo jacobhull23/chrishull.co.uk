@@ -18,9 +18,6 @@
   var current = -1;   // position within `visible`
   var lastFocus = null;
 
-  var year = document.getElementById('year');
-  if (year) year.textContent = new Date().getFullYear();
-
   function slug(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
   function src(p) { return 'images/' + p.file; }
   function altText(p) { return 'Watercolour painting by Chris Hull: ' + p.title + ', ' + p.region; }

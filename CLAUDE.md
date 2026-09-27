@@ -17,6 +17,20 @@ build order. Read it before starting work.
 - If you add a new top-level file or folder the site needs, add it to the
   "Assemble site" step in the workflow, or it won't be published.
 - Fonts are self-hosted from Fontsource (latin subset) in `assets/fonts/`.
+- Canonical domain is **www.chrishull.co.uk** (same pattern as jacobhull.me).
+- Pages share one header/footer; if you change it, change it in all four
+  HTML files.
+
+## Contact form (FormSubmit)
+
+- `contact.html` posts to FormSubmit using the **hashed form ID**
+  (`FORMSUBMIT_ID` in the form's `action` and `data-form-id`). `contact.js`
+  sends it via the AJAX endpoint; without JS it posts normally and FormSubmit
+  redirects to `contact.html?sent=1`.
+- **Never commit the real receiving email address** (not in code, docs or
+  commit messages). The repo is public and it would be scraped for spam.
+- Spam protection: `_honey` honeypot field. `?painting=` prefills the
+  painting field and the email subject.
 
 ## Design
 
