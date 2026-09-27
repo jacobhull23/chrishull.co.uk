@@ -17,6 +17,19 @@ build order. Read it before starting work.
 - If you add a new top-level file or folder the site needs, add it to the
   "Assemble site" step in the workflow, or it won't be published.
 - Fonts are self-hosted from Fontsource (latin subset) in `assets/fonts/`.
+- **Images:** after adding or replacing any JPEG in `images/` or `profile/`,
+  run `python3 scripts/build-images.py` to make the WebP and 800px copies.
+  Each painting in `paintings.json` needs `title`, `region`, `file`, `w`, `h`
+  and a descriptive `alt` (what the painting shows, not just its title).
+- **SEO:** every page has canonical + Open Graph tags pointing at
+  `https://www.chrishull.co.uk/`. New pages need the same head block and an
+  entry in `sitemap.xml`. `assets/og-image.jpg` is the share image.
+- `404.html` sets a `<base>` so its relative links work from any missing URL.
+- Favicon: `scripts/make-favicon.py` draws `assets/icons/favicon.svg`;
+  `favicon.ico` and `apple-touch-icon.png` are rendered from it.
+- `privacy.html` describes exactly what data the site handles. Update it
+  (and its "Last updated" date) if that changes, e.g. analytics or a new
+  form provider.
 - Canonical domain is **www.chrishull.co.uk** (same pattern as jacobhull.me).
 - Pages share one header/footer; if you change it, change it in all four
   HTML files.
@@ -42,11 +55,6 @@ build order. Read it before starting work.
 - Paintings are sold **unframed**; no framing service is offered.
 - Don't name the dog in the photos anywhere on the site.
 
-## Open to-dos
-
-- [ ] **Privacy page** (step 4), like jacobhull.me's: what the contact form
-      collects, FormSubmit, GitHub Pages logs. Link it from the footer and
-      the form note.
 
 ## Design
 

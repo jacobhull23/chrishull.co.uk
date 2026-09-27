@@ -90,6 +90,7 @@ main{flex:1;width:100%;max-width:var(--maxw);margin:0 auto;padding:0 var(--gutte
 /* ---------- Mounted-print frame (reusable) ---------- */
 .frame{background:var(--frame);padding:clamp(8px,1vw,12px);box-shadow:var(--shadow)}
 .frame img{width:100%;height:auto}
+.frame picture{display:block}
 
 /* ---------- Buttons / pills ---------- */
 .btn{
@@ -116,7 +117,7 @@ main{flex:1;width:100%;max-width:var(--maxw);margin:0 auto;padding:0 var(--gutte
 }
 .filters button:hover{border-color:var(--ink);color:var(--ink)}
 .filters button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
-.filters .count{opacity:.6;margin-left:4px}
+.filters .count{margin-left:4px}
 
 /* ---------- Justified gallery ----------
    Each tile's flex-basis and flex-grow are proportional to the painting's aspect ratio (--r),
@@ -262,3 +263,9 @@ main{flex:1;width:100%;max-width:var(--maxw);margin:0 auto;padding:0 var(--gutte
 .form-success h2{margin-bottom:8px}
 .form-success p{color:var(--muted)}
 .form-success button{margin-top:18px}
+
+/* Privacy / long-form text */
+.policy{max-width:680px;margin:0 auto}
+.policy h2{font-size:26px;margin:40px 0 10px}
+.policy h2:first-child{margin-top:0}
+.policy .small{margin-top:40px}

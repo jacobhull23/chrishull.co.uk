@@ -7,6 +7,7 @@
   var filterButtons = Array.prototype.slice.call(document.querySelectorAll('[data-filter]'));
   var lb = document.getElementById('lightbox');
   var lbImg = document.getElementById('lb-img');
+  var lbWebp = document.getElementById('lb-webp');
   var lbTitle = document.getElementById('lb-title');
   var lbMeta = document.getElementById('lb-meta');
   var lbCount = document.getElementById('lb-count');
@@ -19,8 +20,16 @@
   var lastFocus = null;
 
   function slug(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
+  // Image variants from scripts/build-images.py: full-size JPEG/WebP plus 800px-wide copies in images/800/.
   function src(p) { return 'images/' + p.file; }
-  function altText(p) { return 'Watercolour painting by Chris Hull: ' + p.title + ', ' + p.region; }
+  function stem(p) { return p.file.replace(/\.jpg$/i, ''); }
+  function webp(p) { return 'images/' + stem(p) + '.webp'; }
+  function srcset(p, ext) {
+    var small = 'images/800/' + stem(p) + ext + ' 800w';
+    return p.w > 800 ? small + ', images/' + stem(p) + ext + ' ' + p.w + 'w' : small;
+  }
+  var TILE_SIZES = '(max-width: 700px) calc(100vw - 32px), (max-width: 1100px) 45vw, 420px';
+  function altText(p) { return p.alt || ('Watercolour painting of ' + p.title); }
 
   function render() {
     var frag = document.createDocumentFragment();
@@ -37,14 +46,23 @@
       var fig = document.createElement('figure');
       var frame = document.createElement('div');
       frame.className = 'frame';
+      var pic = document.createElement('picture');
+      var source = document.createElement('source');
+      source.type = 'image/webp';
+      source.srcset = srcset(p, '.webp');
+      source.sizes = TILE_SIZES;
       var img = document.createElement('img');
-      img.src = src(p);
+      img.src = 'images/800/' + p.file;
+      img.srcset = srcset(p, '.jpg');
+      img.sizes = TILE_SIZES;
       img.alt = altText(p);
       img.width = p.w;
       img.height = p.h;
       img.loading = i < 8 ? 'eager' : 'lazy';
       img.decoding = 'async';
-      frame.appendChild(img);
+      pic.appendChild(source);
+      pic.appendChild(img);
+      frame.appendChild(pic);
 
       var cap = document.createElement('figcaption');
       cap.textContent = p.title;
@@ -97,6 +115,7 @@
     var n = visible.length;
     current = (pos + n) % n;
     var p = paintings[visible[current]];
+    lbWebp.srcset = webp(p);
     lbImg.src = src(p);
     lbImg.alt = altText(p);
     lbImg.width = p.w;
@@ -108,7 +127,7 @@
     // Warm the cache for neighbours so arrowing through feels instant.
     [1, -1].forEach(function (d) {
       var q = paintings[visible[(current + d + n) % n]];
-      new Image().src = src(q);
+      new Image().src = webp(q);
     });
   }
   function open(index) {
