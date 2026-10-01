@@ -31,6 +31,25 @@
   var TILE_SIZES = '(max-width: 700px) calc(100vw - 32px), (max-width: 1100px) 45vw, 420px';
   function altText(p) { return p.alt || ('Watercolour painting of ' + p.title); }
 
+  // Salon hang: each painting gets its own size, height on the wall and slight tilt.
+  // Derived from a hash of the file name, so it varies without a repeating pattern
+  // but stays the same on every visit (and when paintings are reordered).
+  function hash(s) {
+    var h = 2166136261;
+    for (var i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); }
+    return (h >>> 0) / 4294967295;
+  }
+  function hang(li, p, i) {
+    var r = p.w / p.h;
+    var k = i === 0 ? 1.5 : 0.72 + hash(p.file) * 0.66;   // the lead painting hangs largest
+    var h = 150 * k;
+    if (r > 2) h *= 0.75;                                   // keep panoramas in proportion
+    if (r < 1) h *= 1.15;                                   // give portraits some presence
+    li.style.setProperty('--h', h.toFixed(0) + 'px');
+    li.style.setProperty('--dy', ((hash(p.file + 'y') - 0.5) * 44).toFixed(1) + 'px');
+    li.style.setProperty('--rot', ((hash(p.file + 'r') - 0.5) * 1.8).toFixed(2) + 'deg');
+  }
+
   function render() {
     var frag = document.createDocumentFragment();
     paintings.forEach(function (p, i) {
@@ -38,6 +57,7 @@
       li.className = 'tile';
       li.dataset.region = slug(p.region);
       li.style.setProperty('--r', (p.w / p.h).toFixed(4));
+      hang(li, p, i);
 
       var a = document.createElement('a');
       a.href = src(p);
@@ -85,7 +105,10 @@
     Array.prototype.forEach.call(gallery.children, function (li, i) {
       var show = key === 'all' || li.dataset.region === key;
       li.hidden = !show;
-      if (show) visible.push(i);
+      if (show) {
+        li.dataset.side = visible.length % 2 ? 'right' : 'left';   // phone stagger
+        visible.push(i);
+      }
     });
   }
   function addCounts() {
