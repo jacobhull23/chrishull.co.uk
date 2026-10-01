@@ -85,7 +85,16 @@
       frame.appendChild(pic);
 
       var cap = document.createElement('figcaption');
-      cap.textContent = p.title;
+      // The pencil handwriting font's "&" looks like a dagger, so draw ampersands in Lora italic.
+      p.title.split('&').forEach(function (part, n) {
+        if (n) {
+          var amp = document.createElement('span');
+          amp.className = 'amp';
+          amp.textContent = '&';
+          cap.appendChild(amp);
+        }
+        cap.appendChild(document.createTextNode(part));
+      });
 
       fig.appendChild(frame);
       fig.appendChild(cap);

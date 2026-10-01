@@ -17,9 +17,9 @@ build order. Read it before starting work.
 - If you add a new top-level file or folder the site needs, add it to the
   "Assemble site" step in the workflow, or it won't be published.
 - Fonts are self-hosted from Fontsource (latin subset) in `assets/fonts/`:
-  Lora (name, headings), Inter (body/UI), Caveat (handwritten painting
-  titles). "Nothing You Could Do" is also included as an alternative
-  pencil hand: switch with `--hand`/`--hand-size` in `site.css`.
+  Lora (name, headings), Inter (body/UI) and "Nothing You Could Do" (pencil
+  handwriting for painting titles). Caveat is kept as Jacob's fallback
+  handwriting: switch with `--hand`/`--hand-size` in `site.css`.
 - **Images:** after adding or replacing any JPEG in `images/` or `profile/`,
   run `python3 scripts/build-images.py` to make the WebP and 800px copies.
   Each painting in `paintings.json` needs `title`, `region`, `file`, `w`, `h`
@@ -68,7 +68,7 @@ build order. Read it before starting work.
   white mounts with soft shadow (never coloured frames: paintings are sold
   unframed).
 - Gallery is a **salon hang**: centred rows, varied sizes, each painting a
-  little higher/lower and under 1° off level, with a handwritten title
+  little higher/lower and under 1° off level, with a pencilled title
   below. `gallery.js` derives size/offset/tilt from a hash of the file name
   (stable, no repeating pattern); the first painting in `paintings.json`
   hangs largest. Phones: one per row, staggered left/right.
