@@ -48,6 +48,11 @@
     li.style.setProperty('--h', h.toFixed(0) + 'px');
     li.style.setProperty('--dy', ((hash(p.file + 'y') - 0.5) * 44).toFixed(1) + 'px');
     li.style.setProperty('--rot', ((hash(p.file + 'r') - 0.5) * 1.8).toFixed(2) + 'deg');
+    // The pencilled title is written by hand too: nudged sideways, a touch higher or lower,
+    // and tilted independently of the painting.
+    li.style.setProperty('--cx', ((hash(p.file + 'cx') - 0.5) * 28).toFixed(1) + 'px');
+    li.style.setProperty('--cy', ((hash(p.file + 'cy') - 0.5) * 8).toFixed(1) + 'px');
+    li.style.setProperty('--crot', ((hash(p.file + 'cr') - 0.5) * 4).toFixed(2) + 'deg');
   }
 
   function render() {

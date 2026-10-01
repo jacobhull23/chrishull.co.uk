@@ -69,7 +69,8 @@ build order. Read it before starting work.
   unframed).
 - Gallery is a **salon hang**: centred rows, varied sizes, each painting a
   little higher/lower and under 1° off level, with a pencilled title
-  below. `gallery.js` derives size/offset/tilt from a hash of the file name
+  below that is itself slightly off-centre and tilted, as if written by hand.
+  `gallery.js` derives size/offset/tilt from a hash of the file name
   (stable, no repeating pattern); the first painting in `paintings.json`
   hangs largest. Phones: one per row, staggered left/right.
 - **Never crop paintings.** Always show their true aspect ratio.

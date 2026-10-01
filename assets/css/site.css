@@ -150,7 +150,8 @@ main{flex:1;width:100%;max-width:var(--maxw);margin:0 auto;padding:0 var(--gutte
 /* Handwritten title, as if pencilled on the wall label */
 .tile figcaption{
   text-align:center;font-family:var(--hand);font-size:var(--hand-size);line-height:1.15;
-  margin-top:10px;color:#55524b;transform:translateY(var(--dy,0));
+  margin-top:10px;color:#55524b;
+  transform:translate(var(--cx,0), calc(var(--dy,0) + var(--cy,0))) rotate(var(--crot,0));
 }
 .tile figcaption .amp{font-family:var(--serif);font-style:italic;font-size:.95em}
 .tile[hidden]{display:none}
@@ -250,6 +251,9 @@ main{flex:1;width:100%;max-width:var(--maxw);margin:0 auto;padding:0 var(--gutte
 .examples figure{flex:var(--r) 1 calc(var(--r) * 140px + 20px);max-width:300px;min-width:0}
 .examples figcaption{text-align:center;font-family:var(--hand);font-size:max(16px, calc(var(--hand-size) - 2px));line-height:1.15;margin-top:10px;color:#55524b}
 .examples .frame{padding:10px}
+.examples figure:nth-child(1) figcaption{transform:translate(-6px,1px) rotate(-1.4deg)}
+.examples figure:nth-child(2) figcaption{transform:translate(8px,-1px) rotate(1deg)}
+.examples figure:nth-child(3) figcaption{transform:translate(-3px,2px) rotate(-0.6deg)}
 
 .cta{text-align:center;margin-top:56px}
 .cta p{color:var(--muted);margin-bottom:16px}
@@ -257,7 +261,7 @@ main{flex:1;width:100%;max-width:var(--maxw);margin:0 auto;padding:0 var(--gutte
 /* About */
 .about{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(28px,5vw,56px);align-items:start}
 .about .frame{transform:rotate(-1.2deg)}
-.about figcaption{font-family:var(--hand);font-size:max(16px, calc(var(--hand-size) - 2px));line-height:1.15;color:#55524b;text-align:center;margin-top:14px}
+.about figcaption{transform:translateX(10px) rotate(-1.5deg);font-family:var(--hand);font-size:max(16px, calc(var(--hand-size) - 2px));line-height:1.15;color:#55524b;text-align:center;margin-top:14px}
 @media (max-width:760px){.about{grid-template-columns:1fr}.about figure{max-width:380px;margin:0 auto}}
 .credentials{
   list-style:none;padding:28px 0;margin:0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
