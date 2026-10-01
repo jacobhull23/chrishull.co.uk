@@ -21,7 +21,7 @@
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-<link rel="preload" href="assets/fonts/cormorant-garamond-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/lora-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/site.css">
 </head>
@@ -29,12 +29,14 @@
 <a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header">
-  <svg class="wash" viewBox="0 0 900 260" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-    <defs><filter id="wash-blur" x="-20%" y="-40%" width="140%" height="180%"><feTurbulence type="fractalNoise" baseFrequency=".012" numOctaves="3" seed="4"/><feDisplacementMap in="SourceGraphic" scale="60"/><feGaussianBlur stdDeviation="14"/></filter></defs>
-    <g filter="url(#wash-blur)" opacity=".5"><ellipse cx="330" cy="130" rx="260" ry="70" fill="#9fb4c7"/><ellipse cx="560" cy="120" rx="220" ry="60" fill="#c9b79a"/><ellipse cx="450" cy="150" rx="160" ry="40" fill="#b8a7b8"/></g>
-  </svg>
-  <a class="mark" href="./">C. J. Hull</a>
-  <p class="tagline">Watercolour paintings from Snowdonia</p>
+  <div class="brand">
+    <a class="mark" href="./">C. J. Hull</a>
+    <p class="tagline">Watercolour paintings from Snowdonia</p>
+    <svg class="wash" viewBox="0 0 900 260" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <defs><filter id="wash-blur" x="-20%" y="-40%" width="140%" height="180%"><feTurbulence type="fractalNoise" baseFrequency=".012" numOctaves="3" seed="4"/><feDisplacementMap in="SourceGraphic" scale="60"/><feGaussianBlur stdDeviation="14"/></filter></defs>
+      <g filter="url(#wash-blur)" opacity=".5"><ellipse cx="330" cy="130" rx="260" ry="70" fill="#9fb4c7"/><ellipse cx="560" cy="120" rx="220" ry="60" fill="#c9b79a"/><ellipse cx="450" cy="150" rx="160" ry="40" fill="#b8a7b8"/></g>
+    </svg>
+  </div>
   <nav class="site-nav" aria-label="Main">
     <ul>
       <li><a href="./">Gallery</a></li>
