@@ -34,8 +34,9 @@ build order. Read it before starting work.
   only, not Google Search). Every page has `<meta name="robots"
   content="noai, noimageai">` and the footer carries a copyright notice.
   Keep all three on new pages. These deter well-behaved bots only.
-  Right-click and drag are disabled on paintings (`site.js`), showing a
-  friendly copyright note instead. When the domain is connected (step 5),
+  Right-click blocking was tried and removed on purpose: it doesn't stop
+  bots and gets in the way of visitors sharing paintings. Don't re-add it.
+  When the domain is connected (step 5),
   it goes through **Cloudflare** with "Block AI bots" on: see `BRIEF.md`.
 - `404.html` sets a `<base>` so its relative links work from any missing URL.
 - Favicon: Jacob's ink-splat artwork (`reference/ink-splat-favicon.png`, not
