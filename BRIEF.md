@@ -48,4 +48,9 @@ Chris Hull is a watercolour artist based in North Wales, on the edge of Snowdoni
 2. Gallery page from `paintings.json`, with the lightbox.
 3. Commissions, About, Contact (with the form service).
 4. Image pipeline (sizes/WebP), SEO/meta, favicon, accessibility pass.
-5. Preview on `*.github.io`, Jacob reviews, then point the Namecheap DNS and enforce HTTPS.
+5. Preview on `*.github.io`, Jacob reviews, then connect the domain **through Cloudflare** (free plan) so AI-bot blocking is enforced, not just requested:
+   1. Add `chrishull.co.uk` to Cloudflare and switch the domain's nameservers in Namecheap to Cloudflare's (the domain stays registered at Namecheap).
+   2. In Cloudflare DNS: apex A records to GitHub Pages and a `www` CNAME to `jacobhull23.github.io`, all **DNS only (grey cloud)** at first.
+   3. Add a `CNAME` file (`www.chrishull.co.uk`) to the repo; set the custom domain in GitHub **Settings → Pages** and wait for its certificate, then tick **Enforce HTTPS**.
+   4. Turn the Cloudflare proxy on (orange cloud), set **SSL/TLS → Full (strict)**, and enable **Security → Bots → Block AI bots** (and AI Labyrinth if offered). Leave search engines allowed.
+   5. Check the site, Google Search Console verification and the contact form, then cancel Carrd.

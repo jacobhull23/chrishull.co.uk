@@ -13,6 +13,6 @@ Static site for C. J. Hull, watercolour artist. Hosted on GitHub Pages; no build
 
 All links are relative, so the site works at `<user>.github.io/chrishull.co.uk/` and at `chrishull.co.uk`.
 
-**Add a painting:** drop the JPEG in `images/`, run `python3 scripts/build-images.py`, then add an entry to `paintings.json` with its title, region, pixel width/height and a short `alt` description.
+**Add a painting:** drop the JPEG in `images/`, run `python3 scripts/build-images.py` (needs `pip install pillow piexif`; it also stamps copyright metadata), then add an entry to `paintings.json` with its title, region, pixel width/height and a short `alt` description.
 
 **Preview locally:** `python3 -m http.server` in the repo root, then open http://localhost:8000 (opening the file directly won't load `paintings.json`).
