@@ -21,12 +21,19 @@ build order. Read it before starting work.
   handwriting for painting titles). Caveat is kept as Jacob's fallback
   handwriting: switch with `--hand`/`--hand-size` in `site.css`.
 - **Images:** after adding or replacing any JPEG in `images/` or `profile/`,
-  run `python3 scripts/build-images.py` to make the WebP and 800px copies.
+  run `python3 scripts/build-images.py` (needs `pip install pillow piexif`).
+  It stamps the original with Chris's copyright metadata (EXIF + XMP,
+  lossless) and makes the WebP and 800px copies, which carry it too.
   Each painting in `paintings.json` needs `title`, `region`, `file`, `w`, `h`
   and a descriptive `alt` (what the painting shows, not just its title).
 - **SEO:** every page has canonical + Open Graph tags pointing at
   `https://www.chrishull.co.uk/`. New pages need the same head block and an
   entry in `sitemap.xml`. `assets/og-image.jpg` is the share image.
+- **Content protection:** `robots.txt` allows search engines but blocks
+  known AI-training/dataset crawlers (Google-Extended blocks Gemini training
+  only, not Google Search). Every page has `<meta name="robots"
+  content="noai, noimageai">` and the footer carries a copyright notice.
+  Keep all three on new pages. These deter well-behaved bots only.
 - `404.html` sets a `<base>` so its relative links work from any missing URL.
 - Favicon: Jacob's ink-splat artwork (`reference/ink-splat-favicon.png`, not
   published). `scripts/make-favicons.py` crops it and writes `favicon.ico`,
