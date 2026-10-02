@@ -300,3 +300,18 @@ main{flex:1;width:100%;max-width:var(--maxw);margin:0 auto;padding:0 var(--gutte
 .policy h2{font-size:26px;margin:40px 0 10px}
 .policy h2:first-child{margin-top:0}
 .policy .small{margin-top:40px}
+
+/* ---------- Light copy protection (see site.js) ---------- */
+.frame img,.lb-img{-webkit-user-drag:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.copy-note{
+  position:fixed;left:50%;bottom:24px;z-index:20;transform:translate(-50%,16px);
+  width:max-content;max-width:min(460px,calc(100vw - 32px));
+  padding:12px 18px;border-radius:6px;background:var(--ink);color:var(--paper);
+  font-size:14px;line-height:1.5;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.18);
+  opacity:0;pointer-events:none;transition:opacity .2s ease,transform .2s ease;
+}
+.copy-note.show{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+.copy-note a{color:var(--paper)}
+@media (prefers-reduced-motion:reduce){.copy-note{transition:none}}
+.lightbox .copy-note{top:24px;bottom:auto;transform:translate(-50%,-16px)}
+.lightbox .copy-note.show{transform:translate(-50%,0)}
